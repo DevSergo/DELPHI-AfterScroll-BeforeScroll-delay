@@ -1,9 +1,9 @@
 {
-		Это часть какого-то большого моего проекта.
+		Р­С‚Рѕ С‡Р°СЃС‚СЊ РєР°РєРѕРіРѕ-С‚Рѕ Р±РѕР»СЊС€РѕРіРѕ РјРѕРµРіРѕ РїСЂРѕРµРєС‚Р°.
 
-	- заполняем таблицу FDQuery1 10000 строк.
-	- тестируем задержку в событиях AfterScroll и BeforeScroll
-	- используем OutputDebugString	
+	- Р·Р°РїРѕР»РЅСЏРµРј С‚Р°Р±Р»РёС†Сѓ FDQuery1 10000 СЃС‚СЂРѕРє.
+	- С‚РµСЃС‚РёСЂСѓРµРј Р·Р°РґРµСЂР¶РєСѓ РІ СЃРѕР±С‹С‚РёСЏС… AfterScroll Рё BeforeScroll
+	- РёСЃРїРѕР»СЊР·СѓРµРј OutputDebugString	
 }
 
 unit Unit1;
@@ -67,7 +67,7 @@ begin
     begin
           FDQuery1.Append;
           FDQuery1.FieldByName('id').AsInteger := i;
-          FDQuery1.FieldByName('name').AsString := 'Захар_' + i.ToString;
+          FDQuery1.FieldByName('name').AsString := 'Р—Р°С…Р°СЂ_' + i.ToString;
           FDQuery1.Post;
     end;
   end;
